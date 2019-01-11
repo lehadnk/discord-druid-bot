@@ -1,0 +1,16 @@
+{
+  "name": "druid-bot",
+  "version": "1.0.0",
+  "description": "A discord.js bot for russian druid wow channel",
+  "main": "run.js",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "dotenv": "^6.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexey Zauzin <lehadnk@gmail.com>",
+  "license": "ISC"
+}
