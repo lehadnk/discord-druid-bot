@@ -16,14 +16,14 @@ export default class PublicMessageController {
             user = new User();
             user.name = msg.authorName;
             user.discord_user_id = msg.authorId;
-            await this.usersDao.save(user);
+            await this.usersDao.save(user).catch(r => console.error(r));
         }
 
         let message = new ChannelMessage();
         message.discord_channel_id = msg.channelId;
         message.discord_user_id = msg.authorId;
         message.time = Math.floor(Date.now() / 1000);
-        await this.messagesDao.save(message);
+        await this.messagesDao.save(message).catch(r => console.error(r));
 
         return null;
     }

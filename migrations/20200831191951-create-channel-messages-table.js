@@ -15,15 +15,14 @@ exports.setup = function(options, seedLink) {
 };
 
 exports.up = async function(db) {
-  await db.createTable('channel-messages', {
+  await db.createTable('channel_messages', {
     id: { type: 'int', primaryKey: true, autoIncrement: true},
-    name: 'string',
     discord_user_id: 'string',
     discord_channel_id: 'string',
     time: 'int',
   });
 
-  db.addIndex('channel-messages', 'unique_discord_channel_id_and_user_id', ['discord_channel_id', 'discord_user_id'], false);
+  db.addIndex('channel_messages', 'unique_discord_channel_id_and_user_id', ['discord_channel_id', 'discord_user_id'], false);
 };
 
 exports.down = function(db) {
