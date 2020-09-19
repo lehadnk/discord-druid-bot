@@ -2,3 +2,4 @@
 .idea/
 node_modules/
 dev-db.db3
+build/*

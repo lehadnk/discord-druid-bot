@@ -1,5 +1,5 @@
 import AbstractDAO from 'nergal/src/DAO/AbstractDAO';
-import { IDbAdapter } from 'nergal/src/Services/Db/IDbAdapter';
+import IDbAdapter from 'nergal/src/Services/Db/IDbAdapter';
 import ChannelMessage from "../Models/ChannelMessage";
 
 export default class ChannelMessagesDAO extends AbstractDAO<ChannelMessage> {
