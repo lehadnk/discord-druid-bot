@@ -15,7 +15,8 @@
     "node_modules/@types"
   ],
   "files": [
-    "run.ts"
+    "run.ts",
+    "console.ts"
   ],
   "types": [
     "mocha",
