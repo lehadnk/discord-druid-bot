@@ -1,5 +1,4 @@
-import {default as ICommand} from "nergal/src/Commands/ICommand";
-import AbstractCommand from "nergal/src/Commands/AbstractCommand";
+import {ICommand, AbstractCommand} from "nergal";
 import AppServiceContainer from "../AppServiceContainer";
 
 export default class ListGuilds extends AbstractCommand implements ICommand {

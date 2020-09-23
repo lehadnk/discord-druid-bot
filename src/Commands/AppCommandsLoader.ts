@@ -1,5 +1,4 @@
-import ICommandsLoader from 'nergal/src/Commands/ICommandsLoader';
-import ICommand from 'nergal/src/Commands/ICommand';
+import {ICommandsLoader, ICommand} from 'nergal';
 import * as commands from './index';
 import AppServiceContainer from "../AppServiceContainer";
 

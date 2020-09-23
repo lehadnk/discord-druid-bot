@@ -1,6 +1,4 @@
-import {DiscordMessage} from "nergal/src/DTO/DiscordMessage";
-import {DiscordControllerResponse} from "nergal/src/DTO/DiscordControllerResponse";
-import IRouter from 'nergal/src/Routing/IRouter';
+import {DiscordMessage, DiscordControllerResponse, IRouter} from "nergal";
 import DirectMessageController from "./Controllers/DirectMessageController";
 import PublicMessageController from "./Controllers/PublicMessageController";
 
